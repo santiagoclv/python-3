@@ -5,3 +5,4 @@ ZeroDivisionError # Obvious.
 IndexError # You get it when trying to get a part of the array does not exist
 SyntaxError # invalid sintax
 NameError # name not found
+KeyError # key not found ?
