@@ -54,3 +54,35 @@ print(fruits)
 ## Acumulator pattern with dictonaries
 ##
 
+board_file = open("../week_1/board.txt", "r")
+board_data = board_file.read()
+character_count = {}
+for c in board_data:
+    if(character_count.get(c) == None):
+        character_count[c] = 0
+
+    character_count[c] += 1
+print(character_count)
+board_file.close()
+
+# UPDATE method
+# If does not exist it will be created and if it exists it will be updated with the new value.
+
+character_count.update({"z": 23})
+character_count.update({"T": 23})
+
+
+# counting characters and looking for the max frequencies
+
+sally = "sally sells sea shells by the sea shore"
+
+characters = {}
+for ch in sally:
+    characters.update({ch: characters.get(ch, 0) + 1})
+
+max_value = max(characters, key=lambda k: characters[k]) # max(characters.values())
+best_char = ''
+for key, value in characters.items():
+    if(value == max_value):
+        best_char = key
+        break
