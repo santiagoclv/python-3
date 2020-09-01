@@ -37,8 +37,12 @@ def doble(numero):
 def es_par(numero):
     return numero % 2 == 0
 
+doble_solo_pares = [ doble(num) for num in numeros if es_par(num) ]
+
 doble_solo_pares_set = { doble(num) for num in numeros if es_par(num) } # this will generate a set
+
 doble_solo_pares_dictionary = { num: doble(num) for num in numeros if es_par(num) } # this will generate a dictionary
+
 doble_solo_pares_generador = ( doble(num) for num in numeros if es_par(num) ) # this will generate a generator
 
 # All kind of iterators.
