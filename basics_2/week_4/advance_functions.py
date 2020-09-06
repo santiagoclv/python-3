@@ -1,6 +1,8 @@
 
 """
-There are two tricky things that can confuse you with default values. The first is that the default value is determined at the time that the function is defined, not at the time that it is invoked. 
+ There are two tricky things that can confuse you with default values. 
+ The first is that the default value is determined at the time that 
+ the function is defined, not at the time that it is invoked. 
 """
 
 # Optional Parameters
@@ -15,21 +17,25 @@ f(2, 5, 8)
 
 """
     Another warning:
-    The second tricky thing is that if the default value is set to a mutable object, such as a list or a dictionary, that object will be shared in all invocations of the function. This can get very confusing, so I suggest that you never set a default value that is a mutable object. For example, follow the exceution of this one carefully.
+    The second tricky thing is that if the default value is set to a mutable object, such as a list or 
+    a dictionary, that object will be shared in all invocations of the function. 
+    This can get very confusing, so I suggest that you never set a default value that
+     is a mutable object. For example, follow the exceution of this one carefully.
 """
 
 def ff(a, L=[]):
     L.append(a)
     return L
 
-print(f(1)) # initial values: 1, []
-print(f(2)) # initial values: 2, [1]
-print(f(3)) # initial values: 3, [1, 2]
-print(f(4, ["Hello"])) # initial values: 4, ["Hello"]
-print(f(5, ["Hello"])) # initial values: 5, ["Hello"]
+print(ff(1)) # initial values: 1, []
+print(ff(2)) # initial values: 2, [1]
+print(ff(3)) # initial values: 3, [1, 2]
+print(ff(4, ["Hello"])) # initial values: 4, ["Hello"]
+print(ff(5, ["Hello"])) # initial values: 5, ["Hello"]
 
 """
-    Keyword Parameters: with keyword-based parameter passing. This is particularly convenient when there are several optional parameters and you want to provide a value for one of the later parameters while not providing a value for the earlier ones.
+    Keyword Parameters: with keyword-based parameter passing. This is particularly convenient when there are 
+    several optional parameters and you want to provide a value for one of the later parameters while not providing a value for the earlier ones.
 
     https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments
 

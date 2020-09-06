@@ -34,5 +34,27 @@
     * tuples
 
 ### week 4
-    * advance functions
+    * advance functions - parameters
     * whilers!
+    * conditional assigment one liner
+
+### week 5
+    * sort arrays
+
+# Basics 3
+
+### week 1
+    * json
+    * deep and shadow copy
+
+### week 2
+    * comprehension
+    * zip
+
+### week 3
+    * REST API calls
+
+# Basics 4
+
+### week 1
+    * OOP
