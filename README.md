@@ -54,7 +54,7 @@
 ### week 3
     * REST API calls
 
-# Basics 4
+# Basics 4 ( OOP )
 
 ### week 1
-    * OOP
+    * Classes
