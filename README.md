@@ -63,7 +63,6 @@
     * tamagochi
 ### week 2
     * inheriting
-### week 3
+### week 3 https://docs.python.org/3/library/unittest.html#classes-and-functions
     * unit test
     * async test - work in progress
-    

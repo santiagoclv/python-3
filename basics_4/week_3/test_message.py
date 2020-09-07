@@ -13,6 +13,15 @@
         assertNotIn(a, b)               a not in b
         assertIsInstance(a, b)          isinstance(a, b)
         assertNotIsInstance(a, b)       not isinstance(a, b)
+
+
+        To assert exceptions
+
+        with self.assertRaises(SomeException) as cm:
+            do_something()
+
+        the_exception = cm.exception
+        self.assertEqual(the_exception.error_code, 3)
 """
 
 import unittest
