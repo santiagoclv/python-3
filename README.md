@@ -58,3 +58,10 @@
 
 ### week 1
     * Classes
+    * sort objects list
+    * __special__ methods
+    * tamagochi
+### week 2
+    * inheriting
+### week 3
+    * unit test
