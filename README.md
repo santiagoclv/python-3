@@ -53,6 +53,7 @@
 
 ### week 3
     * REST API calls
+    * pip conda packages
 
 # Basics 4 ( OOP )
 
