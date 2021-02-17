@@ -9,9 +9,9 @@ original.append("Hi there")
 original[0].append(["marsupials"])
 
 print("-------- Original -----------")
-print(original)
+print(original, id(original))
 print("-------- shallow copy -----------")
-print(shallow_copy_version)
+print(shallow_copy_version, id(shallow_copy_version))
 
 print("-------- deep copy -----------")
-print(deeply_copied_version)
+print(deeply_copied_version, id(deeply_copied_version))
